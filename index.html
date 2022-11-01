@@ -464,9 +464,11 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <input type="text" name="user-name" class="modal-input">
-          <input type="text" name="user-tel" class="modal-input">
-          <input type="text" name="user-email" class="modal-input">
+          <input type="text" name="user-name" class="modal-input" required>
+          <input type="tel" name="user-tel" class="modal-input" required>
+          <input type="email" name="user-email" class="modal-input" required>
+
+          <button type="submit" class="modal-submit">Відправити</button>
         </form>
       </div>
     </div>
