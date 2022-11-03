@@ -587,14 +587,14 @@ ul {
 .footer h3 {
   font-weight: 700;
   line-height: 16px;
-
+color: var(--text-color-button-hover);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .footer-soc {
   margin-left: 70px;
-  color: #ffffff;
+  
 }
 .footer-soc-list {
   display: flex;
@@ -622,6 +622,59 @@ ul {
   fill: #ffffff;
 }
 
+/* footer Приєднуйтесь */
+
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-input {
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 16px;
+outline: transparent;
+}
+
+.subscription-input:hover, .subscription-input:focus {
+  border-color: var(--logo-button-contact-color);
+}
+
+.subscription-submit {
+  background-color: var(--logo-button-contact-color) ;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+color: var(--text-color-button-hover);
+padding: 10px 28px;
+border: none;
+margin-left: 12px;
+cursor: pointer;
+}
+
+.subscription-icon {
+  margin-left: 10px;
+
+}
+
+.subscription-submit:hover, .subscription-submit:focus {
+  background-color: #188ce8;
+}
+
 /* Фокус в хедері, футері, кнопках */
 
 .contact-phone-number:hover,
@@ -644,9 +697,7 @@ ul {
 }
 
 /* Активна сторінка навігації */
-.header-list-nav {
-  /* position: relative; */
-}
+
 
 .nav-list {
   height: 100%;
@@ -657,8 +708,7 @@ ul {
 .list-activ {
   color: var(--logo-button-contact-color);
   position: relative;
-  /* height: ; */
-  /* width: 100%; */
+  
 }
 
 .list-activ::after {
@@ -671,6 +721,9 @@ ul {
   border-radius: 2px;
   background: var(--logo-button-contact-color);
 }
+
+
+/* backdrop */
 
 .backdrop {
   width: 100%;
@@ -782,7 +835,6 @@ ul {
 .modal-submit:hover,
 .modal-submit:focus {
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .input-wrap {
@@ -843,10 +895,7 @@ ul {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-.input-checkbox:checked + .custom-check {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
+
 .input-checkbox:checked + .custom-check > svg {
   opacity: 1;
 }
