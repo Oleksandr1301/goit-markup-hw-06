@@ -537,6 +537,7 @@ ul {
 .footer-section {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .address {
   font-style: normal;
@@ -592,9 +593,9 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer-soc {
+/* .footer-soc {
   margin-left: 70px;
-}
+} */
 .footer-soc-list {
   display: flex;
   justify-content: center;
@@ -623,9 +624,9 @@ ul {
 
 /* footer Приєднуйтесь */
 
-.subscription {
+/* .subscription {
   margin-left: 93px;
-}
+} */
 
 .subscription-form {
   display: flex;
@@ -639,14 +640,20 @@ ul {
   border-radius: 4px;
   padding-left: 16px;
   outline: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color-button-hover);
   background-color: #2F303A;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription-input:hover,
+
 .subscription-input:focus {
   border-color: var(--logo-button-contact-color);
+}
+
+.subscription-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+line-height: 1.25;
 }
 
 .subscription-submit {
@@ -805,14 +812,11 @@ ul {
 }
 
 .modal-input:focus,
-.modal-input:hover,
-.modal-textarea:hover,
 .modal-textarea:focus {
   border-color: var(--logo-button-contact-color);
 }
 
-.modal-input:focus + .modal-icon,
-.modal-input:hover + .modal-icon {
+.modal-input:focus + .modal-icon {
   fill: var(--logo-button-contact-color);
 }
 
@@ -836,8 +840,8 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-submit:hover,
-.modal-submit:focus {
+
+.modal-submit:focus, .modal-submit:hover {
   background-color: #188ce8;
 }
 
@@ -855,6 +859,7 @@ ul {
 }
 
 .input-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -863,6 +868,8 @@ ul {
 }
 
 .modal-textarea {
+  display: block;
+  resize: none;
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -873,6 +880,10 @@ ul {
   margin-right: 0;
 }
 
+.input-textarea {
+  margin-bottom: 20px;
+}
+
 .label-checkbox {
   display: flex;
   justify-content: center;
@@ -881,9 +892,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: var(--p-color-index);
   margin-bottom: 30px;
-  margin-top: 10px;
 }
 
 .custom-check {
